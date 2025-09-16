@@ -1,0 +1,58 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+[user]
+    signingkey = 83AF83DA47DE7F22
+    email = dattadunga@gmail.com
+    name = Agni Datta
+
+[commit]
+    gpgsign = true
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    last = log -1 HEAD
+    lg = log --oneline --graph --decorate --all
+    amend = commit --amend
+    unstage = reset HEAD --
+    s = status -s
+    d = diff
+    l = log --oneline --decorate --graph --all
+
+[include]
+    path = ~/.gitconfig.local
+
+[core]
+    editor = nvim
+    autocrlf = input
+    pager = less -FRX
+
+[color]
+    ui = auto
+
+[merge]
+    tool = vimdiff
+
+[diff]
+    tool = vimdiff
+
+[push]
+    default = simple
+
+[fetch]
+    prune = true
+
+[rebase]
+    autoStash = true
+
+[tag]
+    gpgSign = true
+
+[credential "https://git.overleaf.com"]
+	provider = generic

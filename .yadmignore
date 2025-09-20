@@ -1,2 +1,44 @@
+# Large binary theme/icon files
 .icons/
 .themes/
+
+# Cache and temporary files
+.cache/
+.zsh_history
+.zcompdump*
+
+# Browser and sensitive data
+.mozilla/
+.pki/
+
+# System directories
+.var/
+.local/share/keyrings/
+.local/share/gvfs-metadata/
+.local/share/containers/
+.local/share/flatpak/
+.local/share/evolution/
+.local/share/gnome-shell/
+.local/share/gnome-software/
+.local/share/grilo-plugins/
+
+# User directories
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+Public/
+Templates/
+Drive/
+
+# Project directories
+PyPiP/
+Applications/
+
+# Development tools (if you don't want to sync them)
+.cursor/
+.vscode/
+.lyx/
+.codex/

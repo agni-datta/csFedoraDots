@@ -192,7 +192,10 @@ bindkey '^[[5~' history-beginning-search-backward
 bindkey '^[[6~' history-beginning-search-forward
 
 # GPG Agent - Fix for GPG agent
-export GPG_TTY=$(tty)
+export GPG_TTY=pinentry-gtk
+
+# Run fastfetch on shell initialization
+fastfetch
 
 ###############################################################################
 # End

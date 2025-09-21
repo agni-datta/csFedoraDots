@@ -31,7 +31,7 @@
     "AgentModeCodebaseContextAutoIndexing": "true",
     "DismissedCodeToolbeltNewFeaturePopup": "true",
     "Theme": "{\"Custom\":{\"name\":\"Catppuccin Mocha\",\"path\":\"/home/agnid/.local/share/warp-terminal/themes/catppuccin_mocha.yml\"}}",
-    "AIRequestLimitInfo": "{\"limit\":150,\"num_requests_used_since_refresh\":107,\"next_refresh_time\":\"2025-09-26T00:29:42.549274Z\",\"is_unlimited\":false,\"request_limit_refresh_duration\":\"Monthly\",\"accepted_autosuggestions_limit\":999999,\"is_unlimited_autosuggestions\":true,\"accepted_autosuggestions_since_last_refresh\":1,\"is_unlimited_voice\":false,\"voice_request_limit\":10000,\"voice_token_limit\":30000,\"voice_requests_used_since_last_refresh\":0,\"voice_tokens_used_since_last_refresh\":0,\"is_unlimited_codebase_indices\":false,\"max_codebase_indices\":3,\"max_files_per_repo\":5000,\"embedding_generation_batch_size\":100}",
+    "AIRequestLimitInfo": "{\"limit\":150,\"num_requests_used_since_refresh\":108,\"next_refresh_time\":\"2025-09-26T00:29:42.549274Z\",\"is_unlimited\":false,\"request_limit_refresh_duration\":\"Monthly\",\"accepted_autosuggestions_limit\":999999,\"is_unlimited_autosuggestions\":true,\"accepted_autosuggestions_since_last_refresh\":1,\"is_unlimited_voice\":false,\"voice_request_limit\":10000,\"voice_token_limit\":30000,\"voice_requests_used_since_last_refresh\":0,\"voice_tokens_used_since_last_refresh\":0,\"is_unlimited_codebase_indices\":false,\"max_codebase_indices\":3,\"max_files_per_repo\":5000,\"embedding_generation_batch_size\":100}",
     "FontSize": "14.0",
     "ShowWarningBeforeQuitting": "false",
     "FontName": "\"SpaceMono Nerd Font Mono\"",

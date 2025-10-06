@@ -1,0 +1,247 @@
+.root {
+  /* Nord palette anchors */
+  -jr-theme: #88c0d0;            /* Frost cyan */
+  -jr-accent: #88c0d0;
+  -jr-selected: -jr-accent;
+  -jr-hover: #3b4252;            /* Polar Night 1 */
+
+  -jr-row-odd-background: #2e3440;  /* Polar Night 0 */
+  -jr-row-even-background: #3b4252; /* Polar Night 1 */
+  -jr-accent-alt: #81a1c1;       /* Frost blue */
+
+  -jr-red: #bf616a;              /* Aurora red */
+  -jr-light-red: #d08770;        /* Aurora orange (closest light variant) */
+  -jr-green: #a3be8c;            /* Aurora green */
+  -jr-light-green: #8fbcbb;      /* Frost teal */
+  -jr-blue: #5e81ac;             /* Frost blue-dark */
+  -jr-light-blue: #81a1c1;       /* Frost blue */
+  -jr-purple: #b48ead;           /* Aurora purple */
+  -jr-light-purple: #b48ead;     /* no lighter official; reuse */
+  -jr-yellow: #ebcb8b;           /* Aurora yellow */
+  -jr-orange: #d08770;           /* Aurora orange */
+
+  -jr-base: #2e3440;
+
+  -jr-background-alt: #2e3440;
+  -jr-menu-background: #3b4252;
+  -jr-toolbar: -jr-menu-background;
+  -jr-sidepane-background: #3b4252;
+  -jr-search-background: #3b4252;
+
+  -jr-sidepane-header-background: -jr-background-alt;
+  -jr-group-hits-bg: -jr-background-alt;
+  -jr-group-hits-fg: -fx-light-text-color;
+  -fx-control-inner-background: #3b4252;
+
+  -fx-control-inner-background-alt: -fx-control-inner-background;
+
+  -fx-dark-text-color: #4c566a;  /* Polar Night 3 */
+  -fx-mid-text-color: #4c566a;
+  -fx-light-text-color: #eceff4; /* Snow Storm 2 */
+  -jr-separator: #4c566a;
+  -fx-outer-border: #4c566a;
+
+  -jr-icon: -fx-light-text-color;
+  -jr-icon-active: derive(-fx-light-text-color, 50%);
+  -jr-icon-background-active: -jr-hover;
+  -jr-icon-background-armed: #4c566a;
+
+  -jr-menu-foreground: -fx-light-text-color;
+  -jr-menu-item-foreground: -fx-light-text-color;
+
+  -jr-scrollbar-thumb: -fx-light-text-color;
+  -jr-scrollbar-track: derive(-fx-control-inner-background, -90%);
+
+  -fx-focused-text-base-color: -fx-dark-text-color;
+
+  -jr-tooltip-fg: derive(-fx-light-text-color, 50%);
+
+  -jr-drag-target: -jr-accent;
+  -jr-drag-target-hover: -jr-accent;
+
+  -js-summary-text-color: derive(-fx-light-text-color, 70%);
+  -js-summary-text-color-selected: derive(-fx-dark-text-color, 70%);
+
+  /* Typography */
+  -fx-font-family: "SpaceMono Nerd Font", monospace, serif, sans-serif;
+  -fx-font-size: 11pt;
+
+  /* Accent contrast */
+  -jr-accent-contrast: #000000;
+
+  /* Selection defaults */
+  -fx-selection-bar: -jr-accent;
+  -fx-selection-bar-non-focused: -jr-accent;
+  -fx-selection-bar-text: -jr-accent-contrast;
+  -fx-highlight-fill: -jr-accent;
+  -fx-highlight-text-fill: -jr-accent-contrast;
+
+  -jr-menu-forground-active: -jr-accent-contrast;
+}
+
+.unchanged { }
+
+.addition {
+  -rtfx-background-color: -jr-green;
+}
+
+.deletion {
+  -rtfx-background-color: -jr-red;
+}
+
+#previewBody {
+  background-color: #2e3440;
+  color: #d8dee9; /* Snow Storm 0 */
+}
+
+.custom-color-dialog {
+  -fx-background-color: -fx-control-inner-background;
+}
+
+.table-row-cell:odd {
+  -fx-background-color: #2e3440;
+}
+
+.table-row-cell:even {
+  -fx-background-color: #3b4252;
+}
+
+.table-row-cell:hover,
+.tree-table-row-cell:hover {
+  -fx-background-color: -jr-hover;
+}
+
+.merge-field-value .action-icon {
+  -fx-blend-mode: none;
+  -fx-opacity: 90%;
+}
+
+.merge-header-cell {
+  -fx-border-width: 0 0 1 0;
+  -fx-border-color: -fx-outer-border;
+  -fx-background-color: -jr-row-odd-background;
+}
+
+.merge-header {
+  -fx-background-color: -jr-row-odd-background;
+}
+
+.table-view .groupColumnBackground {
+  -fx-stroke: #434c5e; /* Polar Night 2 */
+}
+
+.code-area .lineno {
+  -fx-background-color: -jr-background-alt;
+  -fx-text-fill: -fx-mid-text-color;
+}
+
+.text-unchanged {
+  -fx-fill: -fx-light-text-color;
+}
+
+.radio-button > .radio {
+  -fx-background-color: -fx-light-text-color, -fx-control-inner-background;
+}
+
+.numberColumn > .hits:any-selected {
+  -fx-background-color: derive(#434c5e, 25%);
+}
+
+.numberColumn > .hits:all-selected {
+  -fx-background-color: #434c5e;
+}
+
+#preferencesContainer .tab-pane > .tab-header-area > .tab-header-background {
+  -fx-background-color: #2e3440;
+}
+
+.mainToolbar .search-field .button .glyph-icon {
+  -fx-fill: derive(-fx-light-text-color, 80%);
+  -fx-text-fill: derive(-fx-light-text-color, 80%);
+  -fx-icon-color: derive(-fx-light-text-color, 80%);
+}
+
+.mainToolbar .search-field .toggle-button .glyph-icon {
+  -fx-fill: #d8dee9; /* Snow Storm 0 */
+  -fx-text-fill: #d8dee9;
+  -fx-icon-color: #d8dee9;
+}
+
+.mainToolbar .search-field .toggle-button:selected .glyph-icon {
+  -fx-fill: #000000;
+  -fx-text-fill: #000000;
+  -fx-icon-color: #000000;
+}
+
+.notification-bar > .pane {
+  -fx-background-color: -fx-light-text-color;
+}
+
+.rating > .container > .button {
+  -fx-icon-color: derive(-fx-light-text-color, -49%);
+}
+
+.rating > .container > .button.strong {
+  -fx-icon-color: -fx-light-text-color;
+}
+
+/* enforce black text on selection across controls */
+.list-cell:filled:selected,
+.tree-cell:filled:selected,
+.table-row-cell:selected,
+.tree-table-row-cell:selected,
+.table-row-cell:selected .text,
+.tree-table-row-cell:selected .text {
+  -fx-text-fill: #000000;
+}
+
+.table-view:focused .table-row-cell:selected,
+.table-view .table-row-cell:selected,
+.tree-table-view:focused .tree-table-row-cell:selected,
+.tree-table-view .tree-table-row-cell:selected,
+.list-view:focused .list-cell:selected,
+.list-view .list-cell:selected {
+  -fx-background-color: -jr-accent;
+  -fx-text-fill: #000000;
+}
+
+.text-input:focused,
+.text-input {
+  -fx-highlight-fill: -jr-accent;
+  -fx-highlight-text-fill: #000000;
+}
+
+.code-area .selection,
+.styled-text-area .selection {
+  -fx-background-color: -jr-accent;
+}
+
+.code-area .selection *.text,
+.styled-text-area .selection *.text {
+  -fx-fill: #000000;
+}
+
+.toggle-button:selected,
+.button:selected,
+.button:default {
+  -fx-text-fill: #000000;
+}
+
+.toggle-button:selected .glyph-icon,
+.button:selected .glyph-icon,
+.button:default .glyph-icon {
+  -fx-fill: #000000;
+  -fx-text-fill: #000000;
+  -fx-icon-color: #000000;
+}
+
+.menu-item:focused .label,
+.menu-item:focused .label .text {
+  -fx-text-fill: #000000;
+}
+
+.check-box:selected .text,
+.radio-button:selected .text {
+  -fx-fill: #000000;
+}
+

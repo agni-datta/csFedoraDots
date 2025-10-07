@@ -2440,7 +2440,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:github/vadimcn/vscode-lldb@v1.11.5",
+      "id": "pkg:github/vadimcn/vscode-lldb@v1.11.6",
       "asset": [
         {
           "target": "darwin_x64",
@@ -2654,7 +2654,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/dev-cycles/contextive@v1.17.7",
+      "id": "pkg:github/dev-cycles/contextive@v1.17.8",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -3357,7 +3357,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/CQLabs/homebrew-dcm@1.31.4",
+      "id": "pkg:github/CQLabs/homebrew-dcm@1.32.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -6679,7 +6679,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/elijah-potter/harper@v0.66.0",
+      "id": "pkg:github/elijah-potter/harper@v0.67.0",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -10404,7 +10404,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/npm-groovy-lint@15.2.1"
+      "id": "pkg:npm/npm-groovy-lint@15.2.2"
     },
     "bin": {
       "npm-groovy-lint": "npm:npm-groovy-lint"
@@ -11620,7 +11620,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40prisma/language-server@6.16.3"
+      "id": "pkg:npm/%40prisma/language-server@6.17.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/prisma/language-tools/{{version}}/packages/vscode/package.json"
@@ -12335,7 +12335,7 @@
       "lsp": "vscode:https://raw.githubusercontent.com/facebook/pyrefly/{{version}}/lsp/package.json"
     },
     "source": {
-      "id": "pkg:pypi/pyrefly@0.36.0"
+      "id": "pkg:pypi/pyrefly@0.36.1"
     },
     "bin": {
       "pyrefly": "pypi:pyrefly"
@@ -13239,7 +13239,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.13.3"
+      "id": "pkg:pypi/ruff@0.14.0"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -13749,7 +13749,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/%40shopify/cli@3.85.4"
+      "id": "pkg:npm/%40shopify/cli@3.85.5"
     },
     "bin": {
       "shopify": "npm:shopify"
@@ -16238,7 +16238,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/tilt-dev/tilt@v0.35.1",
+      "id": "pkg:github/tilt-dev/tilt@v0.35.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -16452,7 +16452,7 @@
       "lspconfig": "tombi"
     },
     "source": {
-      "id": "pkg:pypi/tombi@0.6.24"
+      "id": "pkg:pypi/tombi@0.6.25"
     },
     "bin": {
       "tombi": "pypi:tombi"
@@ -16852,7 +16852,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/typescript-language-server@5.0.0",
+      "id": "pkg:npm/typescript-language-server@5.0.1",
       "extra_packages": [
         "typescript"
       ]
@@ -16951,7 +16951,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/crate-ci/typos@v1.37.3",
+      "id": "pkg:github/crate-ci/typos@v1.38.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -17215,7 +17215,7 @@
     ],
     "categories": [],
     "source": {
-      "id": "pkg:github/astral-sh/uv@0.8.23",
+      "id": "pkg:github/astral-sh/uv@0.8.24",
       "asset": [
         {
           "target": "darwin_x64",
@@ -18381,7 +18381,7 @@
       "message": "xo should now be installed locally in the project where it's used."
     },
     "source": {
-      "id": "pkg:npm/xo@1.2.2"
+      "id": "pkg:npm/xo@1.2.3"
     },
     "bin": {
       "xo": "npm:xo"
@@ -18939,7 +18939,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/zuban@0.0.24"
+      "id": "pkg:pypi/zuban@0.0.25"
     },
     "bin": {
       "zuban": "pypi:zuban"

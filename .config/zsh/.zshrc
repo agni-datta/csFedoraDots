@@ -126,8 +126,8 @@ fi
 # Purpose: short, memorable commands for frequent actions.
 
 # Default editor
-export EDITOR = "nvim"
-export VISUAL = "nvim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 # Navigation
 alias home='cd ~'

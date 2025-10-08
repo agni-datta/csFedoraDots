@@ -1,172 +1,189 @@
-# Starship prompt — Nord + Dracula accents
-# Palette:
-#   user:     #2e3440  (Nord0)
-#   dir:      #3b4252  (Nord1)
-#   git:      #434c5e  (Nord2)
-#   version:  #4c566a  (Nord3)
-#   doc:      #5e81ac  (Nord10, close to Dracula blue)
-#   time:     #6272a4  (Dracula-ish desaturated blue)
-
-# Powerline separators and blocks:
-#   We paint left-to-right segments with matching bg/fg pairs.
+"$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[░▒▓](#2e3440)\
+[](aurora_red)\
 $os\
 $username\
-[](bg:#3b4252 fg:#2e3440)\
+[](bg:aurora_orange fg:aurora_red)\
 $directory\
-[](fg:#3b4252 bg:#434c5e)\
+[](bg:aurora_yellow fg:aurora_orange)\
 $git_branch\
 $git_status\
-[](fg:#434c5e bg:#4c566a)\
+[](fg:aurora_yellow bg:aurora_green)\
 $c\
-$python\
-$elixir\
-$elm\
-$golang\
-$haskell\
-$java\
-$julia\
-$nodejs\
-$nim\
 $rust\
-$scala\
-[](fg:#4c566a bg:#5e81ac)\
-$docker_context\
-[](fg:#5e81ac bg:#6272a4)\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:aurora_green bg:frost2)\
+$conda\
+[](fg:frost2 bg:frost3)\
 $time\
-[ ](fg:#6272a4)\
-\n
+[ ](fg:frost3)\
 $cmd_duration\
-$character\
-"""
+$line_break\
+$character"""
 
-# Add a blank line between prompt and command output.
-# add_newline = false
+palette = 'nord'
 
-[line_break]
-# Keep the explicit line break enabled to separate the status line and prompt line.
+[os]
 disabled = false
+style = "bg:aurora_red fg:polar0"
 
-# Username block. Root color diverges from Nord by design.
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
 [username]
 show_always = true
-style_user = "bg:#2e3440"
-style_root = "bg:#9A348E"
-format = '[ $user ]($style)'
-disabled = false
+style_user = "bg:aurora_red fg:polar0"
+style_root = "bg:aurora_red fg:polar0"
+format = '[ $user]($style)'
 
-# OS indicator off by default. Enable if we want container/WSL hints.
-[os]
-style = "bg:#9A348E"
-disabled = true
-
-# Directory segment. Truncate deep paths and map common folders to glyphs.
 [directory]
-style = "bg:#3b4252"
+style = "bg:aurora_orange fg:polar0"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
-"Documents" = " "
+"Documents" = "󰈙 "
 "Downloads" = " "
-"Music"     = " "
-"Pictures"  = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
 
-# Compiler/runtime language blocks share Nord3 background.
-[c]
-symbol = " "
-style = "bg:#4c566a"
-format = '[ $symbol ($version) ]($style)'
+[git_branch]
+symbol = ""
+style = "bg:aurora_yellow"
+format = '[[ $symbol $branch ](fg:polar0 bg:aurora_yellow)]($style)'
 
-[python]
-symbol = " "
-style = "bg:#4c566a"
-format = '[ $symbol ($version) ]($style)'
-
-[elixir]
-symbol = " "
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
-
-[elm]
-symbol = " "
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
-
-[golang]
-symbol = " "
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
-
-[haskell]
-symbol = " "
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
-
-[java]
-symbol = " "
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
-
-[julia]
-symbol = " "
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
+[git_status]
+style = "bg:aurora_yellow"
+format = '[[($all_status$ahead_behind )](fg:polar0 bg:aurora_yellow)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
 
-[nim]
-symbol = " "
-style = "bg:#434c5e"   # fixed double-# typo
-format = '[ $symbol ($version) ]($style)'
+[c]
+symbol = " "
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
 
-[scala]
-symbol = " "
-style = "bg:#434c5e"
-format = '[ $symbol ($version) ]($style)'
+[golang]
+symbol = ""
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
 
-# Git block on Nord2 to sit between dir and runtimes.
-[git_branch]
-symbol = ""
-style = "bg:#434c5e"
-format = '[ $symbol $branch ]($style)'
+[php]
+symbol = ""
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
 
-[git_status]
-style = "bg:#434c5e"
-format = '[$all_status$ahead_behind ]($style)'
+[java]
+symbol = " "
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
 
-# Docker context pops with Nord10.
+[kotlin]
+symbol = ""
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:aurora_green"
+format = '[[ $symbol( $version) ](fg:polar0 bg:aurora_green)]($style)'
+
+[python]
+symbol = ""
+style = "bg:aurora_green"
+format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:polar0 bg:aurora_green)]($style)'
+
 [docker_context]
-symbol = " "
-style = "bg:#5e81ac"
-format = '[ $symbol $context ]($style) $path'
+symbol = ""
+style = "bg:frost2"
+format = '[[ $symbol( $context) ](fg:polar0 bg:frost2)]($style)'
 
-# Clock on Dracula-ish blue.
+[conda]
+symbol = "  "
+style = "fg:polar0 bg:frost2"
+format = '[$symbol$environment ]($style)'
+ignore_base = false
+
 [time]
 disabled = false
-time_format = "%R"        # 24h HH:MM
-style = "bg:#6272a4"
-format = '[  $time ]($style)'
+time_format = "%R"
+style = "bg:frost3"
+format = '[[  $time ](fg:polar0 bg:frost3)]($style)'
 
-# Prompt character. Success uses time accent. Errors in bold red.
+[line_break]
+disabled = true
+
 [character]
-success_symbol = '[ ➜](#6272a4)'
-error_symbol   = '[ ➜](bold red)'
-# style = "bg:#6272a4"
+disabled = false
+success_symbol = '[❯](bold fg:aurora_green)'
+error_symbol = '[❯](bold fg:aurora_red)'
+vimcmd_symbol = '[❮](bold fg:aurora_green)'
+vimcmd_replace_one_symbol = '[❮](bold fg:frost3)'
+vimcmd_replace_symbol = '[❮](bold fg:frost3)'
+vimcmd_visual_symbol = '[❮](bold fg:aurora_yellow)'
 
-# Command duration shows for runs ≥ 500 ms.
 [cmd_duration]
-min_time = 500
-format = ' [$duration](#6272a4)'
+show_milliseconds = true
+format = " in $duration "
+style = "bg:frost3"
+disabled = false
+show_notifications = true
+min_time_to_notify = 45000
+
+[palettes.nord]
+# Polar Night
+polar0 = "#2e3440"
+polar1 = "#3b4252"
+polar2 = "#434c5e"
+polar3 = "#4c566a"
+# Snow Storm
+snow0  = "#d8dee9"
+snow1  = "#e5e9f0"
+snow2  = "#eceff4"
+# Frost
+frost0 = "#8fbcbb"
+frost1 = "#88c0d0"
+frost2 = "#81a1c1"
+frost3 = "#5e81ac"
+# Aurora
+aurora_red    = "#bf616a"
+aurora_orange = "#d08770"
+aurora_yellow = "#ebcb8b"
+aurora_green  = "#a3be8c"
+aurora_purple = "#b48ead"
 

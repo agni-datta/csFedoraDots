@@ -13,7 +13,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/rhysd/actionlint@v1.7.7",
+      "id": "pkg:github/rhysd/actionlint@v1.7.8",
       "asset": [
         {
           "target": "darwin_x64",
@@ -511,7 +511,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v64.17.1",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v64.17.2",
       "asset": {
         "file": "salesforcedx-vscode-apex-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -937,7 +937,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/basedpyright@1.31.6"
+      "id": "pkg:pypi/basedpyright@1.31.7"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/DetachHead/basedpyright/v{{version}}/packages/vscode-pyright/package.json"
@@ -1317,7 +1317,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/brighterscript-formatter@1.7.18"
+      "id": "pkg:npm/brighterscript-formatter@1.7.19"
     },
     "bin": {
       "bsfmt": "npm:bsfmt"
@@ -1338,7 +1338,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/brighterscript@0.70.1"
+      "id": "pkg:npm/brighterscript@0.70.2"
     },
     "bin": {
       "bsc": "npm:bsc"
@@ -1408,7 +1408,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/%40rokucommunity/bslint@0.8.35"
+      "id": "pkg:npm/%40rokucommunity/bslint@0.8.36"
     },
     "bin": {
       "bslint": "npm:bslint"
@@ -1455,7 +1455,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/bufbuild/buf@v1.57.2",
+      "id": "pkg:github/bufbuild/buf@v1.58.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1730,7 +1730,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@1.40.0"
+      "id": "pkg:pypi/cfn-lint@1.40.1"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -2005,7 +2005,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/hirosystems/clarinet@v3.7.0",
+      "id": "pkg:github/hirosystems/clarinet@v3.8.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -2387,7 +2387,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/blopker/codebook@v0.3.10",
+      "id": "pkg:github/blopker/codebook@v0.3.13",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -2702,7 +2702,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40github/copilot-language-server@1.379.0"
+      "id": "pkg:npm/%40github/copilot-language-server@1.380.0"
     },
     "bin": {
       "copilot-language-server": "npm:copilot-language-server"
@@ -3443,7 +3443,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/denoland/deno@v2.5.3",
+      "id": "pkg:github/denoland/deno@v2.5.4",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -4064,7 +4064,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/editorconfig-checker/editorconfig-checker@v3.4.0",
+      "id": "pkg:github/editorconfig-checker/editorconfig-checker@v3.4.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -4548,7 +4548,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/CppCXY/emmylua-analyzer-rust@0.14.0",
+      "id": "pkg:github/CppCXY/emmylua-analyzer-rust@0.15.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -5373,7 +5373,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/gdtoolkit@4.3.4"
+      "id": "pkg:pypi/gdtoolkit@4.5.0"
     },
     "bin": {
       "gdlint": "pypi:gdlint",
@@ -6176,7 +6176,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:golang/golang.org/x/tools@v0.37.0#cmd/goimports"
+      "id": "pkg:golang/golang.org/x/tools@v0.38.0#cmd/goimports"
     },
     "bin": {
       "goimports": "golang:goimports"
@@ -7283,7 +7283,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/isort@6.1.0"
+      "id": "pkg:pypi/isort@7.0.0"
     },
     "bin": {
       "isort": "pypi:isort"
@@ -7434,7 +7434,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:generic/eclipse/eclipse.jdt.ls@v1.50.0",
+      "id": "pkg:generic/eclipse/eclipse.jdt.ls@v1.51.0",
       "download": [
         {
           "target": [
@@ -7442,7 +7442,7 @@
             "darwin_arm64"
           ],
           "files": {
-            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202509041425.tar.gz",
+            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202510022025.tar.gz",
             "lombok.jar": "https://projectlombok.org/downloads/lombok.jar"
           },
           "config": "config_mac/"
@@ -7450,7 +7450,7 @@
         {
           "target": "linux",
           "files": {
-            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202509041425.tar.gz",
+            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202510022025.tar.gz",
             "lombok.jar": "https://projectlombok.org/downloads/lombok.jar"
           },
           "config": "config_linux/"
@@ -7458,7 +7458,7 @@
         {
           "target": "win",
           "files": {
-            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202509041425.tar.gz",
+            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202510022025.tar.gz",
             "lombok.jar": "https://projectlombok.org/downloads/lombok.jar"
           },
           "config": "config_win/"
@@ -10425,7 +10425,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/nokia/ntt@v0.20.3",
+      "id": "pkg:github/nokia/ntt@v0.21.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -10555,7 +10555,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/oelint-adv@9.0.1"
+      "id": "pkg:pypi/oelint-adv@9.1.0"
     },
     "bin": {
       "oelint-adv": "pypi:oelint-adv"
@@ -10948,7 +10948,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/oxlint@1.21.0"
+      "id": "pkg:npm/oxlint@1.22.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/oxc-project/oxc/oxlint_v{{version}}/editors/vscode/package.json"
@@ -11238,7 +11238,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/phpstan/phpstan@2.1.30",
+      "id": "pkg:github/phpstan/phpstan@2.1.31",
       "asset": {
         "file": "phpstan.phar"
       }
@@ -11620,7 +11620,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40prisma/language-server@6.17.0"
+      "id": "pkg:npm/%40prisma/language-server@6.17.1"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/prisma/language-tools/{{version}}/packages/vscode/package.json"
@@ -12287,7 +12287,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/pyproject-fmt@2.8.0"
+      "id": "pkg:pypi/pyproject-fmt@2.10.0"
     },
     "bin": {
       "pyproject-fmt": "pypi:pyproject-fmt"
@@ -12817,7 +12817,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/reorder-python-imports@3.15.0"
+      "id": "pkg:pypi/reorder-python-imports@3.16.0"
     },
     "bin": {
       "reorder-python-imports": "pypi:reorder-python-imports"
@@ -14526,7 +14526,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.6.12630",
+      "id": "pkg:gem/sorbet@0.6.12638",
       "supported_platforms": [
         "unix"
       ]
@@ -14632,7 +14632,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40spyglassmc/language-server@0.4.46"
+      "id": "pkg:npm/%40spyglassmc/language-server@0.4.47"
     },
     "bin": {
       "spyglassmc-language-server": "npm:spyglassmc-language-server"
@@ -15743,7 +15743,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:generic/hashicorp/terraform-ls@v0.38.1",
+      "id": "pkg:generic/hashicorp/terraform-ls@v0.38.2",
       "download": [
         {
           "target": "darwin_arm64",
@@ -16037,7 +16037,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/textlint@15.2.2"
+      "id": "pkg:npm/textlint@15.2.3"
     },
     "bin": {
       "textlint": "npm:textlint"
@@ -16452,7 +16452,7 @@
       "lspconfig": "tombi"
     },
     "source": {
-      "id": "pkg:pypi/tombi@0.6.25"
+      "id": "pkg:pypi/tombi@0.6.28"
     },
     "bin": {
       "tombi": "pypi:tombi"
@@ -16542,7 +16542,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/aquasecurity/trivy@v0.67.0",
+      "id": "pkg:github/aquasecurity/trivy@v0.67.2",
       "asset": [
         {
           "target": "darwin_x64",
@@ -16713,7 +16713,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40typespec/compiler@1.4.0"
+      "id": "pkg:npm/%40typespec/compiler@1.5.0"
     },
     "bin": {
       "tsp-server": "npm:tsp-server"
@@ -16828,7 +16828,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ty@0.0.1a21"
+      "id": "pkg:pypi/ty@0.0.1a22"
     },
     "bin": {
       "ty": "pypi:ty"
@@ -17131,7 +17131,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/Enter-tainer/typstyle@v0.13.17",
+      "id": "pkg:github/Enter-tainer/typstyle@v0.13.18",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -17173,7 +17173,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/unocss-language-server@0.1.7"
+      "id": "pkg:npm/unocss-language-server@0.1.8"
     },
     "bin": {
       "unocss-language-server": "npm:unocss-language-server"
@@ -17215,7 +17215,7 @@
     ],
     "categories": [],
     "source": {
-      "id": "pkg:github/astral-sh/uv@0.9.0",
+      "id": "pkg:github/astral-sh/uv@0.9.2",
       "asset": [
         {
           "target": "darwin_x64",
@@ -17809,7 +17809,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v64.17.1",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v64.17.2",
       "asset": {
         "file": "salesforcedx-vscode-visualforce-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -18567,7 +18567,7 @@
     ],
     "categories": [],
     "source": {
-      "id": "pkg:github/mikefarah/yq@v4.47.2",
+      "id": "pkg:github/mikefarah/yq@v4.48.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -18939,7 +18939,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/zuban@0.0.25"
+      "id": "pkg:pypi/zuban@0.1.0"
     },
     "bin": {
       "zuban": "pypi:zuban"

@@ -5,57 +5,118 @@
     required = true
 
 [user]
-    signingkey = 83AF83DA47DE7F22
-    email = dattadunga@gmail.com
     name = Agni Datta
+    email = dattadunga@gmail.com
+    signingkey = 83AF83DA47DE7F22
 
 [commit]
     gpgsign = true
+
+[tag]
+    gpgSign = true
+
+[gpg]
+    format = openpgp
+
+[core]
+    editor = nvim
+    pager = delta
+    autocrlf = input
+    preloadindex = true
+    untrackedCache = true
+    fsmonitor = true
+    excludesfile = ~/.config/git/ignore
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[push]
+    default = current
+    autoSetupRemote = true
+    followTags = true
+
+[fetch]
+    prune = true
+    pruneTags = true
+    parallel = 0
+
+[rebase]
+    autoStash = true
+    updateRefs = true
+
+[merge]
+    tool = nvimdiff
+    conflictstyle = zdiff3
+
+[diff]
+    tool = nvimdiff
+    colorMoved = default
+
+[rerere]
+    enabled = true
+
+[maintenance]
+    auto = true
+
+[gc]
+    writeCommitGraph = true
+
+[credential]
+    helper = manager-core
+
+[color]
+    ui = auto
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+    syntax-theme = Dracula
 
 [alias]
     co = checkout
     br = branch
     ci = commit
     st = status
+    s = status -sb
+
     last = log -1 HEAD
-    lg = log --oneline --graph --decorate --all
+
+    lg = log --graph \
+        --pretty=format:'%C(yellow)%h%C(reset) - %C(cyan)%ad%C(reset) %s %C(green)(%cr)%C(reset) %C(bold blue)<%an>%C(reset)%d' \
+        --date=short
+
+    lgg = log --oneline --decorate --graph --all
+
     amend = commit --amend
-    unstage = reset HEAD --
-    s = status -s
+    unstage = restore --staged
+    fixup = commit --fixup
+    squash = rebase -i --autosquash
+
     d = diff
-    l = log --oneline --decorate --graph --all
+    dc = diff --cached
+
+    undo = reset --soft HEAD~1
+
+    cleanup = "!git branch --merged | grep -v '\\*\\|main\\|master' | xargs -n 1 git branch -d"
 
 [include]
     path = ~/.gitconfig.local
 
-[core]
-    editor = nvim
-    autocrlf = input
-    pager = less -FRX
+[url "git@github.com:"]
+    insteadOf = https://github.com/
 
-[color]
-    ui = auto
+[url "git@gitlab.com:"]
+    insteadOf = https://gitlab.com/
 
-[merge]
-    tool = vimdiff
-
-[diff]
-    tool = vimdiff
-
-[push]
-    default = simple
-
-[fetch]
-    prune = true
-
-[rebase]
-    autoStash = true
-
-[tag]
-    gpgSign = true
+[url "git@git.overleaf.com:"]
+    insteadOf = https://git.overleaf.com/
 
 [credential "https://git.overleaf.com"]
-    helper = store
 	provider = generic
-[credential]
-    helper = store

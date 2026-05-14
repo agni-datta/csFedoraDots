@@ -1,0 +1,51 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "cmd+i",
+		"command": "composerMode.agent"
+	},
+	{
+		"key": "cmd+l alt+b",
+		"command": "-latex-workshop.build",
+		"when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-editor.action.addSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-notebook.addFindMatchToSelection",
+		"when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-composer.toggleChatAsEditor",
+		"when": "composerFocused && !editorTextFocus"
+	},
+	{
+		"key": "cmd+d",
+		"command": "editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+cmd+b",
+		"command": "-latex-workshop.build",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+shift+z",
+		"command": "latex-workshop.build"
+	},
+	{
+		"key": "alt+cmd+i",
+		"command": "-workbench.action.toggleDevTools",
+		"when": "isDevelopment"
+	}
+]

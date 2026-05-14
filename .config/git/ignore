@@ -1,0 +1,51 @@
+<!-- @format -->
+
+# Operating System Files
+
+## macOS
+
+.*\*
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.DS*Store
+.DocumentRevisions-V100
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.apdisk
+.com.apple.timemachine.donotpresent
+.fseventsd
+Icon
+Network Trash Folder
+Temporary Items
+
+## Windows
+
+$RECYCLE.BIN/
+_.stackdump
+Thumbs.db
+Thumbs.db:encryptable
+[Dd]esktop.ini
+\*.lnk
+\_.msp
+_.cab
+_.msi
+_.msix
+*.msm
+ehthumbs*vista.db
+ehthumbs.db
+
+## Linux
+
+.Trash-_
+.directory
+.fuse_hidden_
+.nfs\_
+\_~
+
+## CLAUDE
+
+\*\*/.claude/settings.local.json

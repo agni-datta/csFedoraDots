@@ -1,0 +1,258 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+###########################################################
+# GLOBAL PROMPT
+###########################################################
+
+format = """
+[](aurora_red)\
+$os\
+$username\
+$hostname\
+[](bg:aurora_orange fg:aurora_red)\
+$directory\
+[](bg:aurora_yellow fg:aurora_orange)\
+$git_branch\
+$git_status\
+$git_metrics\
+[](fg:aurora_yellow bg:aurora_green)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$python\
+$java\
+$kotlin\
+$php\
+$haskell\
+$docker_context\
+$kubernetes\
+[](fg:aurora_green bg:frost2)\
+$conda\
+$battery\
+[](fg:frost2 bg:frost3)\
+$time\
+[](fg:frost3)\
+$cmd_duration\
+$line_break\
+$character"""
+
+palette = "nord"
+
+###########################################################
+# OS
+###########################################################
+
+[os]
+disabled = false
+style = "bg:aurora_red fg:polar0"
+
+[os.symbols]
+Windows = " "
+Ubuntu = "󰕈 "
+Arch = "󰣇 "
+Debian = "󰣚 "
+Fedora = "󰣛 "
+Macos = "󰀵 "
+Linux = "󰌽 "
+Android = " "
+
+###########################################################
+# USER / HOST
+###########################################################
+
+[username]
+show_always = true
+style_user = "bg:aurora_red fg:polar0"
+style_root = "bg:aurora_red fg:snow2 bold"
+format = "[ $user ]($style)"
+
+[hostname]
+ssh_only = true
+style = "bg:aurora_red fg:polar0"
+format = "[@$hostname ]($style)"
+trim_at = "."
+
+###########################################################
+# DIRECTORY
+###########################################################
+
+[directory]
+style = "bg:aurora_orange fg:polar0"
+format = "[  $path ]($style)"
+truncation_length = 4
+truncate_to_repo = true
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+"Desktop" = "󰟀 "
+"Projects" = "󰏖 "
+
+###########################################################
+# GIT
+###########################################################
+
+[git_branch]
+symbol = " "
+style = "bg:aurora_yellow fg:polar0"
+format = "[ $symbol$branch ]($style)"
+
+[git_status]
+style = "bg:aurora_yellow fg:polar0"
+format = "[( $all_status$ahead_behind )]($style)"
+
+[git_metrics]
+disabled = false
+added_style = "bg:aurora_yellow fg:aurora_green"
+deleted_style = "bg:aurora_yellow fg:aurora_red"
+format = "([+$added]($added_style))([-$deleted]($deleted_style))"
+
+###########################################################
+# LANGUAGES / TOOLS
+###########################################################
+
+[nodejs]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+[python]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+python_binary = ["python3", "python"]
+format = "[ $symbol($version)( \\($virtualenv\\)) ]($style)"
+
+[rust]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+[golang]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+[c]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+[java]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+[kotlin]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+[php]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+[haskell]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($version) ]($style)"
+
+###########################################################
+# CONTAINERS / CLOUD
+###########################################################
+
+[docker_context]
+symbol = " "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol($context) ]($style)"
+
+[kubernetes]
+disabled = false
+symbol = "󱃾 "
+style = "bg:aurora_green fg:polar0"
+format = "[ $symbol$context( \\($namespace\\)) ]($style)"
+
+###########################################################
+# ENVIRONMENTS
+###########################################################
+
+[conda]
+symbol = " "
+style = "bg:frost2 fg:polar0"
+format = "[ $symbol$environment ]($style)"
+ignore_base = true
+
+###########################################################
+# TIME
+###########################################################
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:frost3 fg:polar0"
+format = "[  $time ]($style)"
+
+###########################################################
+# COMMAND DURATION
+###########################################################
+
+[cmd_duration]
+min_time = 2000
+show_milliseconds = true
+style = "fg:frost3"
+format = " 󰔛 $duration"
+show_notifications = true
+min_time_to_notify = 45000
+
+###########################################################
+# PROMPT CHARACTER
+###########################################################
+
+[line_break]
+disabled = true
+
+[character]
+disabled = false
+
+success_symbol = " [❯](bold fg:aurora_green)"
+error_symbol = " [❯](bold fg:aurora_red)"
+
+vimcmd_symbol = "[❮](bold fg:frost1)"
+vimcmd_visual_symbol = "[❮](bold fg:aurora_yellow)"
+vimcmd_replace_symbol = "[❮](bold fg:aurora_orange)"
+vimcmd_replace_one_symbol = "[❮](bold fg:aurora_orange)"
+
+###########################################################
+# PALETTE : NORD
+###########################################################
+
+[palettes.nord]
+
+# Polar Night
+polar0 = "#2e3440"
+polar1 = "#3b4252"
+polar2 = "#434c5e"
+polar3 = "#4c566a"
+
+# Snow Storm
+snow0 = "#d8dee9"
+snow1 = "#e5e9f0"
+snow2 = "#eceff4"
+
+# Frost
+frost0 = "#8fbcbb"
+frost1 = "#88c0d0"
+frost2 = "#81a1c1"
+frost3 = "#5e81ac"
+
+# Aurora
+aurora_red = "#bf616a"
+aurora_orange = "#d08770"
+aurora_yellow = "#ebcb8b"
+aurora_green = "#a3be8c"
+aurora_purple = "#b48ead"

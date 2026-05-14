@@ -1,0 +1,23 @@
+gui:
+  # Use the nord theme
+  theme:
+    activeBorderColor:
+      - '#88C0D0'  # Light blue (Nord accent color)
+      - bold
+    inactiveBorderColor:
+      - '#434C5E'  # Soft grayish blue (Nord color)
+    optionsTextColor:
+      - '#88C0D0'  # Light blue for consistency
+    selectedLineBgColor:
+      - '#3B4252'  # Darker gray-blue (Nord background)
+    cherryPickedCommitBgColor:
+      - '#434C5E'  # Soft grayish blue for cherry-picked commits
+    cherryPickedCommitFgColor:
+      - '#88C0D0'  # Light blue (Nord accent color)
+    unstagedChangesColor:
+      - '#BF616A'  # Red (Nord accent for changes)
+    defaultFgColor:
+      - '#D8DEE9'  # Light grayish-white (Nord text color)
+    searchingActiveBorderColor:
+      - '#EBCB8B'  # Yellow (Nord accent color)
+

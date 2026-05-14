@@ -1,0 +1,416 @@
+.root {
+  /*
+     Nord Theme — High Contrast
+  */
+
+  /* Nord base palette */
+  -nord0: #2e3440;
+  -nord1: #3b4252;
+  -nord2: #434c5e;
+  -nord3: #4c566a;
+
+  -nord4: #d8dee9;
+  -nord5: #e5e9f0;
+  -nord6: #eceff4;
+
+  -nord7: #8fbcbb;
+  -nord8: #88c0d0;
+  -nord9: #81a1c1;
+  -nord10: #5e81ac;
+
+  -nord11: #bf616a;
+  -nord12: #d08770;
+  -nord13: #ebcb8b;
+  -nord14: #a3be8c;
+  -nord15: #b48ead;
+
+  /*
+     Core Theme Variables
+  */
+
+  -jr-theme: -nord10;
+  -jr-accent: -nord9;
+  -jr-selected: -jr-accent;
+
+  -jr-hover: #4c566a;
+
+  -jr-row-odd-background: #2b313d;
+  -jr-row-even-background: #313845;
+
+  -jr-accent-alt: -nord8;
+
+  -jr-red: -nord11;
+  -jr-light-red: -nord12;
+
+  -jr-green: -nord14;
+  -jr-light-green: -nord7;
+
+  -jr-blue: -nord10;
+  -jr-light-blue: -nord9;
+
+  -jr-purple: -nord15;
+  -jr-light-purple: #c895bf;
+
+  -jr-yellow: -nord13;
+  -jr-orange: -nord12;
+
+  -jr-base: -nord0;
+
+  /*
+     Backgrounds
+  */
+
+  -jr-background-alt: -nord0;
+  -jr-menu-background: -nord1;
+  -jr-toolbar: -nord1;
+  -jr-sidepane-background: #323a48;
+  -jr-search-background: #3a4353;
+
+  -jr-sidepane-header-background: -nord0;
+
+  -jr-group-hits-bg: -nord1;
+  -jr-group-hits-fg: -nord6;
+
+  -fx-control-inner-background: #3b4252;
+  -fx-control-inner-background-alt: #434c5e;
+
+  /*
+     Text
+  */
+
+  -fx-dark-text-color: #eceff4;
+  -fx-mid-text-color: #e5e9f0;
+  -fx-light-text-color: #d8dee9;
+
+  -jr-menu-foreground: -nord6;
+  -jr-menu-item-foreground: -nord6;
+
+  /*
+     Borders / Separators
+  */
+
+  -jr-separator: #4c566a;
+  -fx-outer-border: #4c566a;
+
+  /*
+     Icons
+  */
+
+  -jr-icon: -nord6;
+  -jr-icon-active: #ffffff;
+
+  -jr-icon-background-active: #4c566a;
+  -jr-icon-background-armed: #5a657a;
+
+  /*
+     Scrollbars
+  */
+
+  -jr-scrollbar-thumb: #6c7a96;
+  -jr-scrollbar-track: #2a2f3a;
+
+  /*
+     Focus / Selection
+  */
+
+  -fx-focused-text-base-color: #ffffff;
+
+  -jr-accent-contrast: #ffffff;
+
+  -fx-selection-bar: #5e81ac;
+  -fx-selection-bar-non-focused: #4c6f96;
+  -fx-selection-bar-text: #ffffff;
+
+  -fx-highlight-fill: #5e81ac;
+  -fx-highlight-text-fill: #ffffff;
+
+  /*
+     Tooltips / Drag
+  */
+
+  -jr-tooltip-fg: #eceff4;
+
+  -jr-drag-target: #81a1c1;
+  -jr-drag-target-hover: #88c0d0;
+
+  /*
+     Summary Text
+  */
+
+  -jr-summary-text-color: #b8c0d0;
+  -jr-summary-text-color-selected: #ffffff;
+
+  /*
+     Typography
+  */
+
+  -fx-font-family: "SpaceMono Nerd Font", "JetBrains Mono", monospace;
+  -fx-font-size: 10pt;
+
+  /* FIXED TYPO */
+  -jr-menu-foreground-active: #ffffff;
+}
+
+/* 
+   Diff Colors
+*/
+
+.addition {
+  -rtfx-background-color: rgba(163, 190, 140, 0.28);
+}
+
+.deletion {
+  -rtfx-background-color: rgba(191, 97, 106, 0.32);
+}
+
+/* 
+   Preview
+*/
+
+#previewBody {
+  background-color: #2e3440;
+  color: #eceff4;
+}
+
+/* 
+   Dialogs
+*/
+
+.custom-color-dialog {
+  -fx-background-color: -fx-control-inner-background;
+}
+
+/* 
+   Tables
+*/
+
+.table-row-cell:odd {
+  -fx-background-color: #2e3440;
+}
+
+.table-row-cell:even {
+  -fx-background-color: #353c4a;
+}
+
+.table-row-cell:hover,
+.tree-table-row-cell:hover {
+  -fx-background-color: #465063;
+}
+
+.table-row-cell:selected,
+.tree-table-row-cell:selected,
+.list-cell:selected {
+  -fx-background-color: #5e81ac;
+  -fx-text-fill: #ffffff;
+}
+
+.table-row-cell:selected .text,
+.tree-table-row-cell:selected .text {
+  -fx-fill: #ffffff;
+}
+
+.merge-field-value .action-icon {
+  -fx-blend-mode: none;
+  -fx-opacity: 1;
+}
+
+.merge-header-cell {
+  -fx-border-width: 0 0 1 0;
+  -fx-border-color: #4c566a;
+  -fx-background-color: #313845;
+}
+
+.merge-header {
+  -fx-background-color: #313845;
+}
+
+.table-view .groupColumnBackground {
+  -fx-stroke: #434c5e;
+}
+
+/* 
+   Code Area
+*/
+
+.code-area {
+  -fx-background-color: #2e3440;
+}
+
+.code-area .lineno {
+  -fx-background-color: #3b4252;
+  -fx-text-fill: #aeb8c8;
+}
+
+.code-area .selection,
+.styled-text-area .selection {
+  -fx-background-color: #5e81ac;
+}
+
+.code-area .selection .text,
+.styled-text-area .selection .text {
+  -fx-fill: white;
+}
+
+.text-unchanged {
+  -fx-fill: #e5e9f0;
+}
+
+/* 
+   Inputs
+*/
+
+.text-input,
+.text-field,
+.text-area {
+  -fx-background-color: #3b4252;
+  -fx-text-fill: #eceff4;
+
+  -fx-highlight-fill: #5e81ac;
+  -fx-highlight-text-fill: white;
+
+  -fx-prompt-text-fill: #8b93a6;
+
+  -fx-background-radius: 4;
+  -fx-border-color: #4c566a;
+  -fx-border-radius: 4;
+}
+
+.text-input:focused,
+.text-field:focused,
+.text-area:focused {
+  -fx-border-color: #81a1c1;
+  -fx-border-width: 1.5;
+}
+
+/* 
+   Radio / Checkbox
+*/
+
+.radio-button > .radio,
+.check-box > .box {
+  -fx-background-color: #4c566a, #3b4252;
+}
+
+.check-box:selected .mark,
+.radio-button:selected .dot {
+  -fx-background-color: #88c0d0;
+}
+
+/* 
+   Number Column
+*/
+
+.numberColumn > .hits:any-selected {
+  -fx-background-color: #5b6c86;
+}
+
+.numberColumn > .hits:all-selected {
+  -fx-background-color: #81a1c1;
+}
+
+/* 
+   Tabs
+*/
+
+#preferencesContainer .tab-pane > .tab-header-area > .tab-header-background {
+  -fx-background-color: #2e3440;
+}
+
+/* 
+   Toolbar Search Icons
+*/
+
+.mainToolbar .search-field .button .glyph-icon {
+  -fx-fill: #cfd6e4;
+  -fx-text-fill: #cfd6e4;
+  -fx-icon-color: #cfd6e4;
+}
+
+.mainToolbar .search-field .toggle-button .glyph-icon {
+  -fx-fill: #eceff4;
+  -fx-text-fill: #eceff4;
+  -fx-icon-color: #eceff4;
+}
+
+.mainToolbar .search-field .toggle-button:selected .glyph-icon {
+  -fx-fill: white;
+  -fx-text-fill: white;
+  -fx-icon-color: white;
+}
+
+/* 
+   Notifications
+*/
+
+.notification-bar > .pane {
+  -fx-background-color: #434c5e;
+}
+
+/* 
+   Rating
+*/
+
+.rating > .container > .button {
+  -fx-icon-color: #7f8ba3;
+}
+
+.rating > .container > .button.strong {
+  -fx-icon-color: #ebcb8b;
+}
+
+/* 
+   Buttons
+*/
+
+.button,
+.toggle-button {
+  -fx-background-color: #434c5e;
+  -fx-text-fill: #eceff4;
+
+  -fx-background-radius: 5;
+  -fx-border-radius: 5;
+
+  -fx-border-color: #4c566a;
+}
+
+.button:hover,
+.toggle-button:hover {
+  -fx-background-color: #4c566a;
+}
+
+.toggle-button:selected,
+.button:selected,
+.button:default {
+  -fx-background-color: #5e81ac;
+  -fx-text-fill: white;
+}
+
+.toggle-button:selected .glyph-icon,
+.button:selected .glyph-icon,
+.button:default .glyph-icon {
+  -fx-fill: white;
+  -fx-text-fill: white;
+  -fx-icon-color: white;
+}
+
+/* 
+   Menus
+*/
+
+.menu-item:focused {
+  -fx-background-color: #5e81ac;
+}
+
+.menu-item:focused .label,
+.menu-item:focused .label .text {
+  -fx-text-fill: white;
+}
+
+/* 
+   Misc
+*/
+
+.check-box:selected .text,
+.radio-button:selected .text {
+  -fx-fill: #eceff4;
+}

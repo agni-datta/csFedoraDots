@@ -1,0 +1,128 @@
+# Nord theme colors:
+#  - nord0: #2E3440 (Polar Night)
+#  - nord1: #3B4252
+#  - nord2: #434C5E
+#  - nord3: #4C566A
+#  - nord4: #D8DEE9 (Snow Storm)
+#  - nord5: #E5E9F0
+#  - nord6: #ECEFF4
+#  - nord7: #8FBCBB (Frost)
+#  - nord8: #88C0D0
+#  - nord9: #81A1C1
+#  - nord10: #5E81AC
+#  - nord11: #BF616A (Red)
+#  - nord12: #D08770 (Orange)
+#  - nord13: #EBCB8B (Yellow)
+#  - nord14: #A3BE8C (Green)
+#  - nord15: #B48EAD (Purple)
+
+colourful: false
+
+filekinds:
+  normal: {foreground: "#D8DEE9"}         # nord4
+  directory: {foreground: "#8FBCBB"}      # nord7
+  symlink: {foreground: "#88C0D0"}        # nord8
+  pipe: {foreground: "#B48EAD"}           # nord15
+  block_device: {foreground: "#81A1C1"}   # nord9
+  char_device: {foreground: "#5E81AC"}    # nord10
+  socket: {foreground: "#EBCB8B"}         # nord13
+  special: {foreground: "#A3BE8C"}        # nord14
+  executable: {foreground: "#A3BE8C"}     # nord14
+  mount_point: {foreground: "#E5E9F0"}    # nord5
+
+perms:
+  user_read: {foreground: "#D8DEE9"}          # nord4
+  user_write: {foreground: "#EBCB8B"}         # nord13
+  user_execute_file: {foreground: "#A3BE8C"}  # nord14
+  user_execute_other: {foreground: "#A3BE8C"} # nord14
+  group_read: {foreground: "#D8DEE9"}         # nord4
+  group_write: {foreground: "#EBCB8B"}        # nord13
+  group_execute: {foreground: "#A3BE8C"}      # nord14
+  other_read: {foreground: "#E5E9F0"}         # nord5
+  other_write: {foreground: "#EBCB8B"}        # nord13
+  other_execute: {foreground: "#A3BE8C"}      # nord14
+  special_user_file: {foreground: "#B48EAD"}  # nord15
+  special_other: {foreground: "#BF616A"}      # nord11
+  attribute: {foreground: "#88C0D0"}          # nord8
+
+size:
+  major: {foreground: "#D8DEE9"}          # nord4
+  minor: {foreground: "#E5E9F0"}          # nord5
+  number_byte: {foreground: "#ECEFF4"}    # nord6
+  number_kilo: {foreground: "#8FBCBB"}    # nord7
+  number_mega: {foreground: "#88C0D0"}    # nord8
+  number_giga: {foreground: "#81A1C1"}    # nord9
+  number_huge: {foreground: "#5E81AC"}    # nord10
+  unit_byte: {foreground: "#D8DEE9"}      # nord4
+  unit_kilo: {foreground: "#8FBCBB"}      # nord7
+  unit_mega: {foreground: "#88C0D0"}      # nord8
+  unit_giga: {foreground: "#81A1C1"}      # nord9
+  unit_huge: {foreground: "#5E81AC"}      # nord10
+
+users:
+  user_you: {foreground: "#EBCB8B"}       # nord13
+  user_root: {foreground: "#BF616A"}      # nord11
+  user_other: {foreground: "#B48EAD"}     # nord15
+  group_yours: {foreground: "#8FBCBB"}    # nord7
+  group_other: {foreground: "#B48EAD"}    # nord15
+  group_root: {foreground: "#BF616A"}     # nord11
+
+links:
+  normal: {foreground: "#88C0D0"}         # nord8
+  multi_link_file: {foreground: "#A3BE8C"}# nord14
+
+git:
+  new: {foreground: "#A3BE8C"}            # nord14
+  modified: {foreground: "#EBCB8B"}       # nord13
+  deleted: {foreground: "#BF616A"}        # nord11
+  renamed: {foreground: "#B48EAD"}        # nord15
+  typechange: {foreground: "#EBCB8B"}     # nord13
+  ignored: {foreground: "#4C566A"}        # nord3
+  conflicted: {foreground: "#BF616A"}     # nord11
+
+git_repo:
+  branch_main: {foreground: "#8FBCBB"}    # nord7
+  branch_other: {foreground: "#81A1C1"}   # nord9
+  git_clean: {foreground: "#A3BE8C"}      # nord14
+  git_dirty: {foreground: "#BF616A"}      # nord11
+
+security_context:
+  colon: {foreground: "#EBCB8B"}          # nord13
+  user: {foreground: "#D8DEE9"}           # nord4
+  role: {foreground: "#B48EAD"}           # nord15
+  typ: {foreground: "#4C566A"}            # nord3
+  range: {foreground: "#E5E9F0"}          # nord5
+
+file_type:
+  image: {foreground: "#8FBCBB"}          # nord7
+  video: {foreground: "#81A1C1"}          # nord9
+  music: {foreground: "#A3BE8C"}          # nord14
+  lossless: {foreground: "#8FBCBB"}       # nord7
+  crypto: {foreground: "#B48EAD"}         # nord15
+  document: {foreground: "#ECEFF4"}       # nord6
+  compressed: {foreground: "#EBCB8B"}     # nord13
+  temp: {foreground: "#BF616A"}           # nord11
+  compiled: {foreground: "#5E81AC"}       # nord10
+  build: {foreground: "#D08770"}          # nord12
+  source: {foreground: "#81A1C1"}         # nord9
+
+punctuation: {foreground: "#E5E9F0"}      # nord5
+date: {foreground: "#EBCB8B"}             # nord13
+inode: {foreground: "#D8DEE9"}            # nord4
+blocks: {foreground: "#4C566A"}           # nord3
+header: {foreground: "#ECEFF4"}           # nord6
+octal: {foreground: "#B48EAD"}            # nord15
+flags: {foreground: "#8FBCBB"}            # nord7
+
+symlink_path: {foreground: "#88C0D0"}     # nord8
+control_char: {foreground: "#B48EAD"}     # nord15
+broken_symlink: {foreground: "#BF616A"}   # nord11
+broken_path_overlay: {foreground: "#4C566A"} # nord3
+
+filenames:
+  # Custom filename-based overrides
+  # Cargo.toml: {icon: {glyph: 🦀}}
+
+extensions:
+  # Custom extension-based overrides
+  # rs: {filename: {foreground: Red}, icon: {glyph: 🦀}}

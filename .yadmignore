@@ -1,0 +1,288 @@
+###############################################################################
+# yadm ignore file for Fedora dotfiles
+# Excludes machine-specific, sensitive, cache, and large binary data
+###############################################################################
+
+
+###############################################################################
+# USER DIRECTORIES
+###############################################################################
+Applications/
+Desktop/
+Documents/
+Downloads/
+Drive/
+Music/
+Pictures/
+Public/
+Templates/
+Videos/
+
+
+###############################################################################
+# SENSITIVE / CREDENTIALS
+###############################################################################
+.authinfo
+.authinfo.gpg
+.aws/
+.azure/
+.config/gcloud/
+.config/gh/
+.config/git/credentials
+.config/op/
+.credentials/
+.gcloud/
+.gnupg/
+.netrc
+.password-store/
+.pki/
+.secrets/
+.ssh/
+
+
+###############################################################################
+# CACHES
+###############################################################################
+.cache/
+
+# Shell state (auto-generated, machine-specific)
+.bash_history
+.bash_sessions/
+.fzf.zsh
+.lesshst
+.node_repl_history
+.python_history
+.wget-hsts
+.zcompdump
+.zcompdump.*
+.zsh_history
+.zsh_sessions/
+
+# Font cache
+.local/share/fonts/cache/
+
+# Thumbnail cache
+.local/share/thumbnails/
+
+###############################################################################
+# BROWSERS
+###############################################################################
+.mozilla/
+.config/chromium/
+.config/google-chrome/
+.config/microsoft-edge/
+.config/BraveSoftware/
+.config/vivaldi/
+.config/opera/
+
+###############################################################################
+# GNOME / GTK
+###############################################################################
+# dconf binary database (export with: dconf dump / > dconf-settings.ini)
+.config/dconf/user
+
+# GNOME Shell extensions state and data
+.local/share/gnome-shell/
+.config/gnome-shell/
+
+# GNOME Software / PackageKit cache
+.local/share/gnome-software/
+.local/share/PackageKit/
+
+# GNOME Keyring
+.local/share/keyrings/
+
+# GSConnect (machine-specific pairing data)
+.config/gsconnect/
+
+# Tracker (search indexer) database
+.local/share/tracker/
+.local/share/tracker3/
+
+# Grilo media discovery
+.local/share/grilo-plugins/
+
+# Evolution mail/calendar data
+.local/share/evolution/
+.config/evolution/
+
+# GVfs metadata
+.local/share/gvfs-metadata/
+
+# Recent files list
+.local/share/recently-used.xbel
+
+# Baloo file indexer
+.local/share/baloo/
+
+###############################################################################
+# FLATPAK / CONTAINERS / VIRTUAL MACHINES
+###############################################################################
+.local/share/flatpak/
+.local/share/containers/
+.config/containers/
+.var/
+
+# Vagrant, VirtualBox, libvirt
+.VirtualBox/
+.config/VirtualBox/
+.local/share/gnome-boxes/
+.local/share/libvirt/
+.vagrant.d/
+
+###############################################################################
+# LARGE BINARY ASSETS
+###############################################################################
+.icons/
+.local/
+.themes/
+
+###############################################################################
+# DEVELOPMENT TOOLS (machine-specific or large)
+###############################################################################
+# AI / coding assistants
+.aider/
+.antigravity/
+.claude/
+.claude.json
+.codex/
+.continue/
+.cursor/
+.gemini/
+.windsurf/
+
+# Editors
+.idea/
+.lyx/
+.vscode/
+.vscodium/
+
+# Language version managers
+.cargo/git/
+.cargo/registry/
+.goenv/
+.gvm/
+.jabba/
+.jenv/
+.nvm/
+.nvs/
+.pyenv/
+.rbenv/
+.rustup/
+.rvm/
+.sdkman/
+
+# Node / JS
+.node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Python
+*.pyc
+.local/lib/
+.local/pipx/
+.virtualenvs/
+__pycache__/
+
+# Java / JVM
+.m2/
+.gradle/
+.graalvm/
+
+# Go
+.config/go/
+
+# Terraform / cloud CLI state
+.terraform/
+.config/terraform/
+
+###############################################################################
+# APPLICATIONS (data, state, logs — not config)
+###############################################################################
+# Obsidian (workspace state is machine-specific)
+.config/obsidian/
+
+# Antigravity
+.config/antigravity/
+
+# Steam
+.local/share/Steam/
+.steam/
+
+# Discord
+.config/discord/
+
+# Slack
+.config/Slack/
+
+# Zoom
+.config/zoom/
+.zoom/
+
+# Spotify
+.config/spotify/
+
+# Telegram
+.local/share/TelegramDesktop/
+
+# Signal
+.config/Signal/
+
+# JetBrains IDEs
+.config/JetBrains/
+.local/share/JetBrains/
+
+# LibreOffice user data
+.config/libreoffice/4/user/registrymodifications.xcu
+.config/libreoffice/4/user/uno_packages/
+.config/libreoffice/4/user/wordbook/
+
+# Logs
+.local/share/xorg/
+.xsession-errors
+.xsession-errors.old
+
+# GNOME Boxes / VMs
+.local/share/gnome-boxes/
+
+###############################################################################
+# SYSTEM / RUNTIME STATE
+###############################################################################
+.local/share/systemd/
+.config/systemd/user/*.wants/
+
+# D-Bus machine-id (machine-specific)
+.dbus/
+
+# PulseAudio / PipeWire
+.config/pulse/cookie
+
+# Bluetooth
+.config/bluedevil/
+
+# Printer state
+.config/cups/
+
+###############################################################################
+# MISC TOOL STATE
+###############################################################################
+# Python CPAN-style installer state
+.cpan/
+
+# Red Hat / subscription manager state
+.redhat/
+
+# zinit and zoxide runtime data
+.local/share/zinit/
+.local/share/zoxide/
+
+# GitHub Copilot / Devin / OpenCode state
+.config/devin/
+.config/github-copilot/
+.config/opencode/
+
+###############################################################################
+# PROJECT / PERSONAL DIRECTORIES
+###############################################################################
+PyPiP/

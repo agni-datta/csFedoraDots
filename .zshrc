@@ -1,0 +1,1 @@
+/home/agnid/.config/zsh/.zshrc

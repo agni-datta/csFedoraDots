@@ -1,0 +1,4 @@
+.gnupg/**
+.ssh/id_*
+.ssh/*_key
+.ssh/known_hosts

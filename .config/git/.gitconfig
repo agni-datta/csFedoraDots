@@ -1,14 +1,25 @@
+# =========================
+# Git LFS
+# =========================
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
 
+
+# =========================
+# User Identity
+# =========================
 [user]
     name = Agni Datta
     email = dattadunga@gmail.com
     signingkey = 83AF83DA47DE7F22
 
+
+# =========================
+# Signing
+# =========================
 [commit]
     gpgsign = true
 
@@ -18,6 +29,10 @@
 [gpg]
     format = openpgp
 
+
+# =========================
+# Core
+# =========================
 [core]
     editor = nvim
     pager = delta
@@ -27,11 +42,15 @@
     fsmonitor = true
     excludesfile = ~/.config/git/ignore
 
+
+# =========================
+# Defaults
+# =========================
 [init]
     defaultBranch = main
 
 [pull]
-    rebase = false
+    rebase = true
 
 [push]
     default = current
@@ -41,7 +60,7 @@
 [fetch]
     prune = true
     pruneTags = true
-    parallel = 0
+    parallel = 25
 
 [rebase]
     autoStash = true
@@ -54,7 +73,12 @@
 [diff]
     tool = nvimdiff
     colorMoved = default
+    algorithm = histogram
 
+
+# =========================
+# Performance / Maintenance
+# =========================
 [rerere]
     enabled = true
 
@@ -64,8 +88,10 @@
 [gc]
     writeCommitGraph = true
 
-[credential]
 
+# =========================
+# UI / Colors
+# =========================
 [color]
     ui = auto
 
@@ -76,8 +102,28 @@
     navigate = true
     side-by-side = true
     line-numbers = true
-    syntax-theme = Dracula
+    syntax-theme = Nord
+    features = decorations
 
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    file-style = yellow ul
+    hunk-header-style = file line-number syntax
+
+
+# =========================
+# Quality of Life
+# =========================
+[help]
+    autocorrect = prompt
+
+[status]
+    submoduleSummary = true
+
+
+# =========================
+# Aliases
+# =========================
 [alias]
     co = checkout
     br = branch
@@ -105,17 +151,45 @@
 
     cleanup = "!git branch --merged | grep -v '\\*\\|main\\|master' | xargs -n 1 git branch -d"
 
+
+# =========================
+# Includes
+# =========================
 [include]
     path = ~/.gitconfig.local
 
+
+# =========================
+# URL Rewrites
+# =========================
 [url "git@git.overleaf.com:"]
     insteadOf = https://git.overleaf.com/
 
+
+# =========================
+# Credentials
+# =========================
+
+# Global secure credential storage
+# Recommended for Linux:
+# sudo pacman -S libsecret
+# git config --global credential.helper /usr/lib/git-core/git-credential-libsecret
+
+[credential]
+    helper = /usr/lib/git-core/git-credential-libsecret
+
+
+# Overleaf
 [credential "https://git.overleaf.com"]
-	provider = generic
+    helper = /usr/lib/git-core/git-credential-libsecret
+    provider = generic
+
+
+# GitHub
 [credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+    helper = !/usr/bin/gh auth git-credential
+
+
+# GitHub Gists
 [credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+    helper = !/usr/bin/gh auth git-credential

@@ -1,3 +1,13 @@
+---
+title: "👀 Preview"
+aliases: "👀 Preview"
+linter-yaml-title-alias: "👀 Preview"
+date created: 2026-05-15
+date modified: 2026-07-21
+---
+
+<!-- @format -->
+
 <div align="center">
   <img src="https://github.com/sxyazi/yazi/blob/main/assets/logo.png?raw=true" alt="Yazi logo" width="20%">
 </div>
@@ -6,19 +16,19 @@
  Nord Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
-## 👀 Preview
+# 👀 Preview
 
 <img src="preview.png" width="600" />
 
 ## 🎨 Installation
 
-#### For latest yazi version
+### For Latest Yazi Version
 
 ```sh
 ya pkg add AdithyanA2005/nord
 ```
 
-#### For yazi version <= 25.5.28
+### For Yazi Version 25.5.28 and Earlier
 
 ```sh
 ya pack -a AdithyanA2005/nord

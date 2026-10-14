@@ -1,9 +1,9 @@
 ---
 title: README
-aliases: README, 'README, "csFedoraDots"'
+aliases: [README, 'README, "csFedoraDots"']
 linter-yaml-title-alias: README
 date created: Tuesday, July 21st 2026, 12:10:35 am
-date modified: Tuesday, August 18th 2026, 10:56:17 am
+date modified: Wednesday, October 14th 2026, 3:25:59 am
 ---
 
 <!-- @format -->

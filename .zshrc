@@ -1,1 +1,1 @@
-/home/agnid/.config/zsh/.zshrc
+.config/zsh/.zshrc
